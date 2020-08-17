@@ -1,0 +1,43 @@
+/* ul {
+    border: none;
+}
+
+li {
+    border: none;
+} */
+body {
+    font-family: "Veteran Typewriter", serif;
+    background-color: #f5f5f5;
+}
+nav {
+    font-size:1.7em;
+   
+}
+
+.name-logo {
+    border: solid 2px black
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+.icon {
+    width: 50vw;
+}
+
+.icon-span {
+    width: 5vw;
+}
+
+.opening-image {
+    font-size: 7em;
+}
+
+.sub-heading {
+    font-size: 3em;
+}
