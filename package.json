@@ -7,7 +7,7 @@
   "description": "Software Engineering Portfolio",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
