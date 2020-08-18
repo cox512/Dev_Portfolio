@@ -17,27 +17,42 @@
     <title>Jacob Joseph Cox | Software Engineer</title>
 </head>
 <body>
-    <nav class="fixed-top container-fluid d-flex justify-content-between p-3">
-        <a class="my-border ml-2 p-3" id="logo" href="#">JJC</a>
-        <div class="nav-titles">
-            <a class="nav-titles p-3" href="#about-section">ABOUT</a>
-            <a class="nav-titles p-3" href="#skills-section">SKILLS</a>
-            <a class="nav-titles p-3" href="#projects-section">PROJECTS</a>
-            <a class="nav-titles mr-2 p-3" href="./public/Resume.pdf">RESUME</a>
-
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+        <a class="my-border ml-2 p-3" id="logo" href="#">JJC</a>        
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-titles p-3" href="#about-section">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-titles p-3" href="#skills-section">SKILLS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-titles p-3" href="#projects-section">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-titles p-3" href="./public/Resume.pdf">RESUME</a>
+            </li>
+          </ul>
         </div>
-    </nav>
+      </nav>
+
     <main class="text-center">
         <div class="spacer">
 
         </div>
         <section class="intro">
             <h1 class="opening-image pt-5 mt-5">Jacob Joseph Cox</h1>
-            <h3 class="sub-heading pb-5 mb-5" >Software Engineer</h3>
+            <h3 class="sub-heading pb-4 mb-4" >Software Engineer</h3>
         </section>
-
-        <section class="p-3 m-3">
-            <a class="jump" id="about-section"> <h3>I WRITE SCRIPTS.</h3> </a>
+        
+        <a class="jump" id="about-section"> <h3 class="pb-4 mb-4"><i>I WRITE SCRIPTS.</i></h3> </a>
+        
+        <section class="about-head pt-4 mt-4">
             <p class="container text-justify about">As a Playwright, a Builder, and now as a Developer I bring over a decade of project management experience and a Do-It-Ourselves pride of ownership to every team I’ve worked with – exploring the “why” of our solution and using that to stimulate our thinking and energize our efforts.</p>
             <p class="container text-justify about">I believe that everyone has the ability to achieve big things – some just need a more detailed map to get there. I’m a cartographer of dreams, who uses story to narrate the treacherous path forward from those original pie-in-the sky moments of inspiration, through the thicket of planning and development.</p>
             <p class="container text-justify about"> I believe in tech with a purpose that reflects its making – technology as a guide that users employ to iterate versions of a fuller self and a more functional world – mobile apps that escort artists of all stripes through the creative process, educational instruction that counsels students through the gauntlet of learning a new skill. If fear is the root of inaction, then a good map and a little assurance is surely a force for change. I aim to create lifelines that steer users toward a more purpose-driven path. I help make dreams, reality.</p>
@@ -48,7 +63,6 @@
             <i class="devicon-html5-plain-wordmark skill-icon"></i>
             <i class="devicon-css3-plain-wordmark skill-icon"></i>
             <i class="devicon-nodejs-plain skill-icon"></i>
-            <i class="devicon-javascript-plain"></i>
             <i class="devicon-python-plain-wordmark skill-icon"></i>
             <i class="devicon-mongodb-plain-wordmark skill-icon"></i>
             <img class='skill-img' src="./public/dbs_sqlite.png" alt="skill icon"/>
@@ -62,10 +76,10 @@
 
         </section>
 
-        <section class="p-3 m-3">
+        <section class="project-section">
             <a class="jump" id="projects-section" ><h3>PROJECTS</h3></a>
-            <div class="d-flex justify-content-center">
-                <div class="card m-2 my-border-2">
+            <div class=" mx-auto project-container">
+                <div class="card m-4  my-border-2 projects">
                     <img src="./public/gimme5_screenshot.png" class="card-img-top" alt="app link">
                     <div class="card-body">
                       <h5 class="card-title">gimme5</h5>
@@ -82,7 +96,7 @@
                     </div>
                 </div>
 
-                <div class="card m-2 my-border-2">
+                <div class="card m-4 my-border-2 projects">
                     <img src="./public/Dynamic_Site_Image.png" class="card-img-top" alt="app link">
                     <div class="card-body">
                       <h5 class="card-title">Dynamic Web Site</h5>
@@ -104,8 +118,8 @@
                 </div>
             </div>
 
-            <div class="d-flex justify-content-center">
-                <div class="card m-2 my-border-2">
+            <div class="mx-auto project-container">
+                <div class="card m-4 my-border-2 projects">
                     <img src="./public/long_run_screenshot.png" class="card-img-top" alt="app link">
                     <div class="card-body">
                       <h5 class="card-title">Long Distance Project</h5>
@@ -126,7 +140,7 @@
                     </div>
                 </div>
                 
-                <div class="card m-2 my-border-2">
+                <div class="card m-4 my-border-2 projects">
                     <img src="./public/10bagger_screenshot.png" class="card-img-top" alt="app link">
                     <div class="card-body">
                       <h5 class="card-title">10bagger</h5>

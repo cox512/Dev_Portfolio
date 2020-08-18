@@ -1,7 +1,6 @@
 
 body {
     font-family: "Veteran Typewriter", serif;
-    /* background-color: #f5f5f5; */
     background-image: url("./public/paper.jpg");
 }
 
@@ -31,7 +30,6 @@ nav {
 .nav-titles {
     padding-top: 1em;
     color: rgb(242, 242, 240)
-
 }
 .intro {
     margin-top: 13em;
@@ -55,18 +53,6 @@ a {
 
 .nav-titles:hover {
     color: rgb(242, 242, 240)
-}
-
-.icon {
-    width: 50vw;
-}
-
-.icon-span {
-    width: 5vw;
-}
-
-.icon-resume {
-    height: 3em;
 }
 
 .opening-image {
@@ -115,12 +101,97 @@ footer {
    
 }
 
-.card {
-    min-width: 40%;
-    max-width: 500px;
-}
+
 
 .btn:hover{
     background-color: rgb(242, 242, 240);
     color: rgb(67, 68, 69);
 }
+
+@media only screen and (min-width: 769px) {
+    
+
+    .card {
+        min-width: 40%;
+        max-width: 500px;
+    }
+    .project-container {
+        display: flex;
+        justify-content: center;
+    }
+    .project-section {
+        margin-left: 2em;
+        margin-right: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    
+   
+    .intro {
+        margin-top: 10em;
+    }
+
+    .about {
+        font-size: 1.5em;
+    }
+
+    .opening-image {
+        font-size: 5em;
+    }
+
+    .sub-heading {
+        font-size: 3em;
+    }
+  
+    .project-container {
+        width:100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .project-section {
+        margin: 2em;
+    }
+}
+@media only screen and (max-width: 500px) {
+
+    body {
+        background:  rgb(242, 242, 240);;
+    }
+
+    .intro {
+        margin-top: 8em;
+    }
+
+    .about {
+        font-size: 1em;
+    }
+
+    .opening-image {
+        font-size: 2.5em;
+    }
+
+    .sub-heading {
+        font-size: 1.8em;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    .about-head {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .project-section, .card, .project-container, .projects, .my-border-2 {
+        margin-left: 0em;
+        margin-right: 0em;
+        padding-left: 0em;
+        padding-right: 0em;
+    }
+  }
