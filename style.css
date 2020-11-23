@@ -1,7 +1,7 @@
 
 body {
     font-family: "Veteran Typewriter", serif;
-    background-image: url("./public/paper.jpg");
+    background-image: url("./public/images/paper.jpg");
 }
 
 .jump {
@@ -81,7 +81,13 @@ h3 {
       margin-bottom: 2em;
   }
 
-  .card-text {
+.project-container {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.card-text {
       text-align: justify;
   }
 
@@ -101,24 +107,18 @@ footer {
    
 }
 
-
-
 .btn:hover{
     background-color: rgb(242, 242, 240);
     color: rgb(67, 68, 69);
 }
 
 @media only screen and (min-width: 769px) {
-    
 
     .card {
-        min-width: 30%;
-        max-width: 400px;
+        min-width: 40%;
+        max-width: 500px;
     }
-    .project-container {
-        display: flex;
-        justify-content: center;
-    }
+    
     .project-section {
         margin-left: 2em;
         margin-right: 2em;
@@ -147,12 +147,6 @@ footer {
         font-size: 3em;
     }
   
-    .project-container {
-        width:100%;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .project-section {
         margin: 2em;
     }
@@ -188,7 +182,7 @@ footer {
         padding-top: 0;
     }
 
-    .project-section, .card, .project-container, .projects, .my-border-2 {
+    .project-section, .card, .projects, .my-border-2 {
         margin-left: 0em;
         margin-right: 0em;
         padding-left: 0em;

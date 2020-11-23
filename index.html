@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
-    <link href="./veteran_typewriter.ttf" rel="stylesheet">
+    <link href="./public/veteran_typewriter.ttf" rel="stylesheet">
     
 
     <link rel="stylesheet" href="./style.css">
@@ -35,7 +35,7 @@
               <a class="nav-link nav-titles p-3" href="#projects-section">PROJECTS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-titles p-3" href="./public/Resume_Jacob_Cox.pdf" target="_blank">RESUME</a>
+              <a class="nav-link nav-titles p-3" href="./public/files/resume-jacob-cox.pdf" target="_blank">RESUME</a>
             </li>
           </ul>
         </div>
@@ -67,22 +67,40 @@
             <i class="devicon-nodejs-plain skill-icon"></i>
             <i class="devicon-python-plain-wordmark skill-icon"></i>
             <i class="devicon-mongodb-plain-wordmark skill-icon"></i>
-            <img class='skill-img' src="./public/dbs_sqlite.png" alt="skill icon"/>
-            <img class='skill-img' src="./public/flask_python.png" alt="skill icon"/>
+            <img class='skill-img' src="./public/icons/dbs-sqlite.png" alt="skill icon"/>
+            <img class='skill-img' src="./public/icons/flask-python.png" alt="skill icon"/>
             <i class="devicon-express-original skill-icon"></i>
             <i class="devicon-github-plain skill-icon"></i>
             <i class="devicon-jquery-plain skill-icon"></i>
             <i class="devicon-bootstrap-plain skill-icon"></i>
             <i class="devicon-heroku-original skill-icon"></i>
             <i class="devicon-react-original skill-icon"></i>
-
         </section>
 
         <section class="project-section">
             <a class="jump" id="projects-section" ><h3>PROJECTS</h3></a>
+
+
             <div class=" mx-auto project-container">
+              <div class="project-container">
+              <div class="card m-4 my-border-2 projects">
+                <a href="https://quizactly.vercel.app/" target="_blank"><img src="./public/images/quizactly-screenshot.png" class="card-img-top" alt="app link"></a>
+                <div class="card-body">
+                  <h5 class="card-title">Quizactly</h5>
+                  <p class="card-text">Quizactly is a trivia game that provides a random selection of multiple choice questions for the user to answer. Each correct answer earns the user one point and each incorrect answer docks them a point. One round is 10 questions long, with the score tallying as the game progresses. High score is saved in local storage so players can play against each other. There is an option to clear the high score on Quizactly's landing page.</p>
+                  <h5>Technology Used</h5>
+                    <i class="devicon-html5-plain-wordmark skill-icon"></i>
+                    <i class="devicon-css3-plain-wordmark skill-icon"></i>
+                    <i class="devicon-react-original skill-icon"></i>
+                    <i class="devicon-nodejs-plain skill-icon"></i> 
+                </div>
+                <div class="mb-3">
+                  <a href="https://ten-bagger.herokuapp.com/" target="_blank" class="btn btn-primary p-3">Check It Out</a>
+                </div>
+              </div>
+
               <div class="card m-4  my-border-2 projects">
-                <a href="https://cox512.github.io/gimme5/index.html" target="_blank"><img src="./public/gimme5_screenshot.png" class="card-img-top" alt="app link"></a>
+                <a href="https://cox512.github.io/gimme5/index.html" target="_blank"><img src="./public/images/gimme5-screenshot.png" class="card-img-top" alt="app link"></a>
                   <div class="card-body">
                     <h5 class="card-title">gimme5</h5>
                     <p class="card-text">Gimme5 is an exercise app for writers who feel like they never have the time to get a new project off the ground. The app takes advantage of small periods of down time and prompts the user to begin flexing their creative thinking skills by having them brainstorm lists of five responses to various questions generated around a single randomly-generated word. The writer then uses those responses to create vibrant and wholly original works. Gimme5 is a Writing Workshop you can fit in your pocket -- a helping hand that the writer can grasp as they work their way from a glimmer of inspiration to a full-fledged first draft.</p>
@@ -97,9 +115,11 @@
                     <a href="https://cox512.github.io/gimme5/index.html" target="_blank" class="btn btn-primary p-3">Check It Out</a>
                   </div>
                 </div>
+              </div>
 
+              <div class="project-container">
                 <div class="card m-4 my-border-2 projects">
-                  <a href="https://playwriting-site.herokuapp.com/" target="_blank"><img src="./public/Dynamic_Site_Image.png" class="card-img-top" alt="app link"></a>
+                  <a href="https://playwriting-site.herokuapp.com/" target="_blank"><img src="./public/images/playwriting-screenshot.png" class="card-img-top" alt="app link"></a>
                   <div class="card-body">
                     <h5 class="card-title">Dynamic Web Site</h5>
                     <p class="card-text">A website for my playwriting work that includes information about my plays (cast size, development history, production photos, synopsis, etc). I wanted the site to be easy to maintain, so I decided to create a form that takes in information and uploaded production photos and dynamically styles a new page for that play. It allows me to spend more time creating plays and less time maintaining my site.</p>
@@ -120,7 +140,7 @@
                 </div>
 
                 <div class="card m-4 my-border-2 projects">
-                  <a href="https://ten-bagger.herokuapp.com/" target="_blank"><img src="./public/stock-chart.jpg" class="card-img-top" alt="app link"></a>
+                  <a href="https://ten-bagger.herokuapp.com/" target="_blank"><img src="./public/images/stock-chart.jpg" class="card-img-top" alt="app link"></a>
                   <div class="card-body">
                     <h5 class="card-title">10bagger</h5>
                     <p class="card-text">10Bagger is a stock research app. The user can create an account for themself and have access to the app's research capabilities. Searching for a stock ticker returns the stock's latest price along with information on the company's sector, an overview of what the company does, along with a few basic numbers such as 52-week highs/lows and P/E ratio. The user also has access to the company's last five annual income statements, balance sheets, and cash flow statements. They can then create a "watchlist" and add the stock to it if they want to keep tabs on it. </p>
@@ -132,15 +152,17 @@
                       <i class="devicon-heroku-original skill-icon"></i>
                       <i class="devicon-react-original skill-icon"></i>
                       <i class="devicon-python-plain-wordmark skill-icon"></i>
-                      <img class='skill-img' src="./public/dbs_sqlite.png" alt="skill icon"/>
-                      <img class='skill-img' src="./public/flask_python.png" alt="skill icon"/>
-                      <p>Peewee, Bcrypt, <i>AlphaVantage</i> API, Ant Design, Axios</p>
+                      <img class='skill-img' src="./public/icons/dbs-sqlite.png" alt="SQLite skill icon"/>
+                      <img class='skill-img' src="./public/icons/flask-python.png" alt="skill icon"/>
+                      <p>Peewee, Bcrypt, <i>AlphaVantage</i> API, Axios</p>
                   </div>
                   <div class="mb-3">
                     <a href="https://ten-bagger.herokuapp.com/" target="_blank" class="btn btn-primary p-3">Check It Out</a>
                   </div>
                 </div>
+                </div>
             </div>
+
         </section>
 
     </main>
