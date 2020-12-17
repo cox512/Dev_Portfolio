@@ -5,178 +5,179 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
-
     <link href="./public/veteran_typewriter.ttf" rel="stylesheet">
-    
-
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./public/style.css">
   
     <title>Jacob Joseph Cox | Software Engineer</title>
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
-        <a class="my-border ml-2 p-3" id="logo" href="#">JJC</a>        
-        <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link nav-titles p-3" href="#about-section">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-titles p-3" href="#skills-section">SKILLS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-titles p-3" href="#projects-section">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-titles p-3" href="./public/files/resume_jacob_cox.pdf" target="_blank">RESUME</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
 
-    <main class="text-center">
-        <div class="spacer">
+  <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
+    <div class="navbar__logo-box">
+      <a class="navbar__logo" href="#">JJC</a>
+    </div>        
+    <button class="navbar-toggler" id="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav navbar-nav">
+        <li class="nav-item navbar__title">
+          <a class="nav-link" href="#about-section">ABOUT</a>
+        </li>
+        <li class="nav-item navbar__title">
+          <a class="nav-link" href="#skills-section">SKILLS</a>
+        </li>
+        <li class="nav-item navbar__title">
+          <a class="nav-link" href="#projects-section">PROJECTS</a>
+        </li>
+        <li class="nav-item navbar__title">
+          <a class="nav-link" href="./public/files/resume_jacob_cox.pdf" target="_blank">RESUME</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-        </div>
-        <section class="intro">
-            <h1 class="opening-image pt-5 mt-5">Jacob Joseph Cox</h1>
-            <h3 class="sub-heading pb-4 mb-4" >Software Engineer</h3>
-        </section>
+  <main>
+    <header class="header jump">
+        <h1 class="header__text-box">
+          <span class="heading-primary--main">Jacob Joseph Cox</span>
+          <span class="heading-primary--sub">Software Engineer</span>
+        </h1>
+        <h3 class="header__tagline">
+          <i>I WRITE SCRIPTS.</i>
+        </h3>
+      </header>
         
-        <a class="jump" id="about-section"> <h3 class="pb-4 mb-4"><i>I WRITE SCRIPTS.</i></h3> </a>
-        
-        <section class="about-head pt-4 mt-4">
-            <p class="container text-justify about">I am a Playwright, Builder, and Full-Stack Software Engineer with experience working on projects using JavaScript, Express, React, Python, SQL, MongoDB, and a plain old pen and notepad. I bring over a decade of project management experience and a Do-It-Ourselves pride of ownership to every team I’ve worked with—investigating the demands of a problem and using that to guide our process and energize our efforts.
-            </p>
-            <p class="container text-justify about">I believe that everyone has the ability to achieve big things, some people simply need a more detailed map to get there. Stories are that map. Narrative structures play an important role in all of my work, not solely my playwriting. Stories are a way to communicate with a project's stakeholders; they are a way to navigate the production cycle; they turn complex ideas into comprehensible tasks. It's through the use of story that a successful team can plot the path forward from those original pie-in-the sky moments of inspiration, through the thicket of planning, development, and implementation.
-            </p>
-            <p class="container text-justify about">I believe in tech with a purpose that reflects its making—technology as a guide that users employ to iterate versions of a fuller self and a more functional world; mobile apps that escort artists of all stripes through the creative process; educational instruction that counsels students through the gauntlet of learning a new skill. If fear is the root of inaction, then a good map and a little assurance is surely a force for change. I create tangible guideposts for aspirational journeys. I help make dreams, reality.</p>
-        </section>
-        
-        <section class="p-3 m-3">
-            <a class="jump" id="skills-section" ><h3>SKILLS</h3> </a>
-            <i class="devicon-html5-plain-wordmark skill-icon"></i>
-            <i class="devicon-css3-plain-wordmark skill-icon"></i>
-            <i class="devicon-nodejs-plain skill-icon"></i>
-            <i class="devicon-python-plain-wordmark skill-icon"></i>
-            <i class="devicon-mongodb-plain-wordmark skill-icon"></i>
-            <img class='skill-img' src="./public/icons/dbs-sqlite.png" alt="skill icon"/>
-            <img class='skill-img' src="./public/icons/flask-python.png" alt="skill icon"/>
-            <i class="devicon-express-original skill-icon"></i>
-            <i class="devicon-github-plain skill-icon"></i>
-            <i class="devicon-jquery-plain skill-icon"></i>
-            <i class="devicon-bootstrap-plain skill-icon"></i>
-            <i class="devicon-heroku-original skill-icon"></i>
-            <i class="devicon-react-original skill-icon"></i>
-        </section>
+    <section class="about row mx-auto" >  
+      <a class="jump" id="about-section" ><h3 class="section__heading col-2">ABOUT:</h3></a>
+      <div class="col-10 about__text">
+        <p>I am a Playwright, Builder, and Full-Stack Software Engineer with experience working on projects using JavaScript, Express, React, Python, SQL, MongoDB, and a plain old pen and notepad. I bring over a decade of project management experience and a Do-It-Ourselves pride of ownership to every team I’ve worked with—investigating the demands of a problem and using that to guide our process and energize our efforts.
+        </p>
+        <p>I believe that everyone has the ability to achieve big things, some people simply need a more detailed map to get there. Stories are that map. Narrative structures play an important role in all of my work, not solely my playwriting. Stories are a way to communicate with a project's stakeholders; they are a way to navigate the production cycle; they turn complex ideas into comprehensible tasks. It's through the use of story that a successful team can plot the path forward from those original pie-in-the sky moments of inspiration, through the thicket of planning, development, and implementation.
+        </p>
+        <p>I believe in tech with a purpose that reflects its making—technology as a guide that users employ to iterate versions of a fuller self and a more functional world; mobile apps that escort artists of all stripes through the creative process; educational instruction that counsels students through the gauntlet of learning a new skill. If fear is the root of inaction, then a good map and a little assurance is surely a force for change. I create tangible guideposts for aspirational journeys. I help make dreams, reality.</p>
+      </div>
+    </section>
 
-        <section class="project-section">
-            <a class="jump" id="projects-section" ><h3>PROJECTS</h3></a>
+    <section class="skills row mx-auto">
+      <a class="jump" id="skills-section" ><h3 class="section__heading col-2">SKILLS:</h3></a>
+      <div class="col-10 skills__badges">
+        <i class="devicon-html5-plain-wordmark skill__icon"></i>
+        <i class="devicon-css3-plain-wordmark skill__icon"></i>
+        <i class="devicon-nodejs-plain skill__icon"></i>
+        <i class="devicon-python-plain-wordmark skill__icon"></i>
+        <i class="devicon-mongodb-plain-wordmark skill__icon"></i>
+        <i class="devicon-express-original skill__icon"></i>
+        <i class="devicon-jquery-plain skill__icon"></i>
+        <i class="devicon-bootstrap-plain skill__icon"></i>
+        <i class="devicon-heroku-original skill__icon"></i>
+        <i class="devicon-react-original skill__icon"></i>
+        <img class='skill__img' src="./public/icons/dbs-sqlite.png" alt="skill icon"/>
+        <img class='skill__img' src="./public/icons/flask-python.png" alt="skill icon"/>
+      </div>
+    </section>
 
-
-            <div class=" mx-auto project-container">
-              <div class="project-container">
-              <div class="card m-4 my-border-2 projects">
-                <a href="https://quizactly.vercel.app/" target="_blank"><img src="./public/images/quizactly-screenshot.png" class="card-img-top" alt="app link"></a>
-                <div class="card-body">
-                  <h5 class="card-title">Quizactly</h5>
-                  <p class="card-text">Quizactly is a trivia game that provides a random selection of multiple choice questions for the user to answer. Each correct answer earns the user one point and each incorrect answer docks them a point. One round is 10 questions long, with the score tallying as the game progresses. High score is saved in local storage so players can play against each other. There is an option to clear the high score on Quizactly's landing page.</p>
-                  <h5>Technology Used</h5>
-                    <i class="devicon-html5-plain-wordmark skill-icon"></i>
-                    <i class="devicon-css3-plain-wordmark skill-icon"></i>
-                    <i class="devicon-react-original skill-icon"></i>
-                    <i class="devicon-nodejs-plain skill-icon"></i> 
-                </div>
-                <div class="mb-3">
-                  <a href="https://ten-bagger.herokuapp.com/" target="_blank" class="btn btn-primary p-3">Check It Out</a>
-                </div>
+    <section class="projects">
+      <a class="jump" id="projects-section"><h3 class="section__heading projects__heading">PROJECTS:</h3></a>
+      <div class="projects__container">
+        <div class="projects__sub-container">
+          <div class="card projects__card">
+            <a href="https://quizactly.vercel.app/" target="_blank"><img src="./public/images/quizactly-screenshot.png" class="card-img-top" alt="app screenshot"></a>
+            <div class="card-body">
+              <h4 class="card-title">Quizactly</h4>
+              <p class="card-text">Quizactly is a trivia game that provides a random selection of multiple choice questions for the user to answer. Each correct answer earns the user one point and each incorrect answer docks them a point. One round is 10 questions long, with the score tallying as the game progresses. High score is saved in local storage so players can play against each other. There is an option to clear the high score on Quizactly's landing page.</p>
+              <div class="projects__tech">
+                <h5 class="projects__tech--heading">Technology Used</h5>
+                <i class="devicon-html5-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-css3-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-react-original projects__skill-icon"></i>
+                <i class="devicon-nodejs-plain projects__skill-icon"></i> 
               </div>
-
-              <div class="card m-4  my-border-2 projects">
-                <a href="https://cox512.github.io/gimme5/index.html" target="_blank"><img src="./public/images/gimme5-screenshot.png" class="card-img-top" alt="app link"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">gimme5</h5>
-                    <p class="card-text">Gimme5 is an exercise app for writers who feel like they never have the time to get a new project off the ground. The app takes advantage of small periods of down time and prompts the user to begin flexing their creative thinking skills by having them brainstorm lists of five responses to various questions generated around a single randomly-generated word. The writer then uses those responses to create vibrant and wholly original works. Gimme5 is a Writing Workshop you can fit in your pocket -- a helping hand that the writer can grasp as they work their way from a glimmer of inspiration to a full-fledged first draft.</p>
-                    <h5>Technology Used</h5>
-                      <i class="devicon-html5-plain-wordmark skill-icon"></i>
-                      <i class="devicon-css3-plain-wordmark skill-icon"></i>
-                      <i class="devicon-nodejs-plain skill-icon"></i>
-                      <i class="devicon-jquery-plain skill-icon"></i>
-                      <p class="mt-3">Local Storage</p>
-                  </div>
-                  <div class="mb-3">
-                    <a href="https://cox512.github.io/gimme5/index.html" target="_blank" class="btn btn-primary p-3">Check It Out</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project-container">
-                <div class="card m-4 my-border-2 projects">
-                  <a href="https://playwriting-site.herokuapp.com/" target="_blank"><img src="./public/images/playwriting-screenshot.png" class="card-img-top" alt="app link"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">Dynamic Web Site</h5>
-                    <p class="card-text">A website for my playwriting work that includes information about my plays (cast size, development history, production photos, synopsis, etc). I wanted the site to be easy to maintain, so I decided to create a form that takes in information and uploaded production photos and dynamically styles a new page for that play. It allows me to spend more time creating plays and less time maintaining my site.</p>
-                    <h5 class="mt-5 pt-4">Technology Used</h5>
-                      <i class="devicon-html5-plain-wordmark skill-icon"></i>
-                      <i class="devicon-css3-plain-wordmark skill-icon"></i>
-                      <i class="devicon-nodejs-plain skill-icon"></i>
-                      <i class="devicon-jquery-plain skill-icon"></i>
-                      <i class="devicon-mongodb-plain-wordmark skill-icon"></i> 
-                      <i class="devicon-express-original skill-icon"></i>
-                      <i class="devicon-bootstrap-plain skill-icon"></i>
-                      <i class="devicon-heroku-original skill-icon"></i>
-                      <p class="mt-3">Bcrypt, Multer, Mongoose</p>
-                  </div>
-                    <div class="mb-3">
-                      <a href="https://playwriting-site.herokuapp.com/" target="_blank" class="btn btn-primary p-3">Check It Out</a>
-                  </div>
-                </div>
-
-                <div class="card m-4 my-border-2 projects">
-                  <a href="https://ten-bagger.herokuapp.com/" target="_blank"><img src="./public/images/stock-chart.jpg" class="card-img-top" alt="app link"></a>
-                  <div class="card-body">
-                    <h5 class="card-title">10bagger</h5>
-                    <p class="card-text">10Bagger is a stock research app. The user can create an account for themself and have access to the app's research capabilities. Searching for a stock ticker returns the stock's latest price along with information on the company's sector, an overview of what the company does, along with a few basic numbers such as 52-week highs/lows and P/E ratio. The user also has access to the company's last five annual income statements, balance sheets, and cash flow statements. They can then create a "watchlist" and add the stock to it if they want to keep tabs on it. </p>
-                    <h5>Technology Used</h5>
-                      <i class="devicon-html5-plain-wordmark skill-icon"></i>
-                      <i class="devicon-css3-plain-wordmark skill-icon"></i>
-                      <i class="devicon-nodejs-plain skill-icon"></i>
-                      <i class="devicon-bootstrap-plain skill-icon"></i>
-                      <i class="devicon-heroku-original skill-icon"></i>
-                      <i class="devicon-react-original skill-icon"></i>
-                      <i class="devicon-python-plain-wordmark skill-icon"></i>
-                      <img class='skill-img' src="./public/icons/dbs-sqlite.png" alt="SQLite skill icon"/>
-                      <img class='skill-img' src="./public/icons/flask-python.png" alt="skill icon"/>
-                      <p>Peewee, Bcrypt, <i>AlphaVantage</i> API, Axios</p>
-                  </div>
-                  <div class="mb-3">
-                    <a href="https://ten-bagger.herokuapp.com/" target="_blank" class="btn btn-primary p-3">Check It Out</a>
-                  </div>
-                </div>
-                </div>
             </div>
+            <div class="projects__button">
+              <a href="https://ten-bagger.herokuapp.com/" target="_blank" class="btn btn-primary">Check It Out</a>
+            </div>
+          </div>
 
-        </section>
-
-    </main>
-    <footer class="container-fluid p-3 mt-3 text-right">
-        <div class="container">
-            <a  class="footer-icon" id="footer-icon-1" href="https://www.linkedin.com/in/jacob-joseph-cox-366b6566/"><i class="devicon-linkedin-plain "></i>
-            </a>
-            <a class="footer-icon" id="footer-icon-2" href="https://github.com/cox512"><i class="devicon-github-plain "></i>
-            </a>
+          <div class="card projects__card">
+            <a href="https://cox512.github.io/gimme5/index.html" target="_blank"><img src="./public/images/gimme5-screenshot.png" class="card-img-top" alt="app screenshot"></a>
+            <div class="card-body">
+              <h4 class="card-title">gimme5</h4>
+              <p class="card-text">Gimme5 is an exercise app for writers who feel like they never have the time to get a new project off the ground. The app takes advantage of small periods of down time and prompts the user to begin flexing their creative thinking skills by having them brainstorm lists of five responses to various questions generated around a single randomly-generated word. The writer then uses those responses to create vibrant and wholly original works. Gimme5 is a Writing Workshop you can fit in your pocket -- a helping hand that the writer can grasp as they work their way from a glimmer of inspiration to a full-fledged first draft.</p>
+              <div class="projects__tech">
+                <h5 class="projects__tech--heading">Technology Used</h5>
+                <i class="devicon-html5-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-css3-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-nodejs-plain projects__skill-icon"></i>
+                <i class="devicon-jquery-plain projects__skill-icon"></i>
+              </div>
+            </div>
+            <div class="projects__button">
+              <a href="https://cox512.github.io/gimme5/index.html" target="_blank" class="btn btn-primary">Check It Out</a>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <div class="projects__sub-container">
+          <div class="card projects__card">
+            <a href="https://playwriting-site.herokuapp.com/" target="_blank"><img src="./public/images/playwriting-screenshot.png" class="card-img-top" alt="app screenshot"></a>
+            <div class="card-body">
+              <h4 class="card-title">Dynamic Web Site</h4>
+              <p class="card-text">A website for my playwriting work that includes information about my plays (cast size, development history, production photos, synopsis, etc). I wanted the site to be easy to maintain, so I decided to create a form that takes in information and uploaded production photos and dynamically styles a new page for that play. It allows me to spend more time creating plays and less time maintaining my site.</p>
+              <div class="projects__tech">
+                <h5 class="projects__tech--heading">Technology Used</h5>
+                <i class="devicon-html5-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-css3-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-nodejs-plain projects__skill-icon"></i>
+                <i class="devicon-jquery-plain projects__skill-icon"></i>
+                <i class="devicon-mongodb-plain-wordmark projects__skill-icon"></i> 
+                <i class="devicon-express-original projects__skill-icon"></i>
+                <i class="devicon-bootstrap-plain projects__skill-icon"></i>
+                <i class="devicon-heroku-original projects__skill-icon"></i>
+              </div>
+            </div>
+            <div class="projects__button">
+              <a href="https://playwriting-site.herokuapp.com/" target="_blank" class="btn btn-primary">Check It Out</a>
+            </div>
+          </div>
+
+          <div class="card projects__border projects__card">
+            <a href="https://ten-bagger.herokuapp.com/" target="_blank"><img src="./public/images/stock-chart.jpg" class="card-img-top" alt="app screenshot"></a>
+            <div class="card-body">
+              <h4 class="card-title">10bagger</h4>
+              <p class="card-text">10Bagger is a stock research app. The user can create an account for themself and have access to the app's research capabilities. Searching for a stock ticker returns the stock's latest price along with information on the company's sector, an overview of what the company does, along with a few basic numbers such as 52-week highs/lows and P/E ratio. The user also has access to the company's last five annual income statements, balance sheets, and cash flow statements. They can then create a "watchlist" and add the stock to it if they want to keep tabs on it.</p>
+              <div class="projects__tech">
+                <h5 class="projects__tech--heading">Technology Used</h5>
+                <i class="devicon-html5-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-css3-plain-wordmark projects__skill-icon"></i>
+                <i class="devicon-nodejs-plain projects__skill-icon"></i>
+                <i class="devicon-bootstrap-plain projects__skill-icon"></i>
+                <i class="devicon-react-original projects__skill-icon"></i>
+                <i class="devicon-python-plain-wordmark projects__skill-icon"></i>
+                <img class='skill__img' src="./public/icons/dbs-sqlite.png" alt="SQLite skill icon"/>
+                <img class='skill__img' src="./public/icons/flask-python.png" alt="skill icon"/>
+              </div>
+            </div>
+            <div class="projects__button">
+              <a href="https://ten-bagger.herokuapp.com/" target="_blank" class="btn btn-primary">Check It Out</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <a class="footer__icon" href="https://www.linkedin.com/in/jacob-joseph-cox-366b6566/" target="_blank"><i class="devicon-linkedin-plain"></i>
+      </a>
+      <a href="https://github.com/cox512" target="_blank"><img class="footer__skill-img" src="./public/icons/github.png" alt="github logo"></a>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>

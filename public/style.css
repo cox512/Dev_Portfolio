@@ -1,0 +1,256 @@
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Veteran Typewriter", serif;
+    font-weight: 400;
+    color: rgb(34, 34, 33);
+    line-height: 1.7;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgb(255, 255, 255), 
+        rgb(194, 194, 194))
+}
+
+.jump {
+    scroll-margin-top: 12.5rem;
+  }
+
+.jump:hover {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    font-size:1.7rem;
+    background-color: rgb(67, 68, 69);
+}
+
+.navbar__logo {
+    font-size: 3rem;
+    padding: .5rem;
+    margin: .5rem;
+    color: rgb(211, 211, 209);
+    border: solid 2px rgb(242, 242, 240)
+}
+
+.navbar__logo:hover {
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.navbar__title {
+    font-size: 2rem;
+    padding: 1rem;
+    color: rgb(211, 211, 209);
+}
+
+.navbar__title:hover {
+    color: rgb(255, 255, 255)
+}
+
+.header {
+    text-align: center;
+}
+
+.header__text-box {
+    margin-top: 13rem;
+}
+
+.heading-primary--main {
+    font-size: 7rem;
+    display: block;
+}
+
+.heading-primary--sub {
+    font-size: 5rem;
+    display: block;
+}
+
+.header__tagline {
+    font-size: 3rem;
+    margin: 3rem;
+}
+
+section {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    max-width: 115rem;
+}
+
+.about__text {
+    text-align: left;
+    background-color:rgba(247, 247, 241, 0.3);
+    border-radius: .5rem;
+    padding: 3rem;
+    background-image: url("./images/paper.jpg");
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.section__heading {
+    font-size: 4rem;
+}
+
+.skills__badges {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skill__icon {
+    font-size: 5rem;
+    padding:0 .8rem;
+  }
+
+.skill__img {
+      width: 7rem;
+      margin-bottom: 3.2rem;
+      padding:0 .8rem;
+  }
+
+.projects {
+    margin: 0 auto;
+}
+
+a {
+    color: black;
+}
+
+.projects__card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    margin: 3rem;
+    padding-top: 2rem;
+    border-radius: .5rem;
+}
+
+.projects__button {
+    margin: 0 auto 1rem auto;
+}
+
+.btn-primary {
+    background-color: rgb(67, 68, 69);
+    border-color: rgb(67, 68, 69);
+    font-size: 3rem;
+}
+
+.btn:hover{
+    background-color: rgb(242, 242, 240);
+    color: rgb(67, 68, 69);
+}
+
+.projects__container, .projects__sub-container {
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    min-width: 40%;
+    max-width: 50rem;
+}
+
+.card-title {
+    font-size: 4rem;
+    text-align: center;
+}
+.card-text {
+    text-align: justify;
+}
+
+.projects__heading {
+    padding-left: 1.5rem;
+}
+
+.projects__tech {
+    text-align: center;
+}
+
+.projects__tech--heading {
+    font-size: 3rem;
+}
+
+.projects__skill-icon {
+    font-size: 4rem;
+}
+
+.footer {
+    background: rgb(67, 68, 69);
+        text-align: right;
+}
+
+.footer__icon{
+    padding: 1rem;
+    font-size: 3rem;
+    color: white;
+}
+
+.footer__skill-img {
+    height: 3.3rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+
+.footer__skill-img:hover {
+    cursor: pointer;
+}
+
+.footer__icon:hover {
+    text-decoration: none;
+    color: white
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 50%;
+    }
+    .about {
+        display: block;
+    }
+  
+    .projects__card {
+        margin: 2rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    html {
+        font-size: 30%;
+    }
+
+    body {
+        background: none rgb(255, 255, 255);
+    }
+
+    .about__text {
+        background-image: none;
+        background-color: rgb(255, 255, 255);
+        padding: 1rem;
+        box-shadow: none;
+    }
+
+    .skills__badges {
+        padding: 0
+    }
+
+    .skill__icon {
+        font-size: 4rem;
+        padding: 1rem;
+    }
+
+    .skill__img {
+        width: 5rem;
+        padding: 0;
+        margin-bottom: .5rem;
+    }
+  }
